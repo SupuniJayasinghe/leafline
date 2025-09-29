@@ -36,7 +36,7 @@ export default function Skills() {
     ];
 
     return (
-        <section id="skills" className="py-20 relative overflow-hidden" style={{ backgroundColor: '#f8fafc' }}>
+        <section id="skills" className="py-20 relative overflow-hidden" style={{ backgroundColor: '#dff3e4' }}>
             {/* Background Elements */}
             <div className="absolute inset-0">
                 <div className="absolute top-10 left-10 w-72 h-72 rounded-full opacity-5 floating"
@@ -69,7 +69,7 @@ export default function Skills() {
                     <div className="grid lg:grid-cols-2 gap-8 mb-12">
                         {/* Programming Languages */}
                         <Card
-                            className="glass-card border-0 shadow-xl hover-lift"
+                            className="glass-card border-0 shadow-xl hover-lift bg-white rounded-2xl"
                             data-aos="fade-right"
                             data-aos-offset="200"
                             data-aos-delay="200"
@@ -117,7 +117,7 @@ export default function Skills() {
 
                         {/* Technologies & Tools */}
                         <Card
-                            className="glass-card border-0 shadow-xl hover-lift"
+                            className="glass-card border-0 shadow-xl hover-lift bg-white rounded-2xl"
                             data-aos="fade-left"
                             data-aos-offset="200"
                             data-aos-delay="400"
@@ -189,7 +189,7 @@ export default function Skills() {
 
                     {/* Soft Skills */}
                     <Card
-                        className="glass-card border-0 shadow-xl hover-lift"
+                        className="glass-card border-0 shadow-xl hover-lift bg-white rounded-2xl"
                         data-aos="fade-up"
                         data-aos-offset="200"
                         data-aos-delay="600"

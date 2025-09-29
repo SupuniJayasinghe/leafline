@@ -88,12 +88,12 @@ export default function Contact() {
                         data-aos-duration="1000"
                         data-aos-easing="ease-in-out"
                     >
-                        <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">
+                        <h2 className="text-4xl md:text-5xl font-bold mb-4 text-black">
                             Let's Work Together
                         </h2>
                         <div className="w-24 h-1 mx-auto rounded-full"
                             style={{ background: 'linear-gradient(90deg, #dff3e4, #7180b9)' }}></div>
-                        <p className="text-white/90 mt-6 max-w-2xl mx-auto text-lg">
+                        <p className="text-black/90 mt-6 max-w-2xl mx-auto text-lg">
                             I'm always excited to discuss new opportunities, collaborate on interesting projects,
                             or just have a chat about technology and innovation.
                         </p>
@@ -110,11 +110,11 @@ export default function Contact() {
                             data-aos-easing="ease-in-out"
                         >
                             <div>
-                                <h3 className="text-2xl font-bold mb-6 text-white flex items-center">
+                                <h3 className="text-2xl font-bold mb-6 text-black flex items-center">
                                     <MessageCircle className="w-6 h-6 mr-3" />
                                     Get In Touch
                                 </h3>
-                                <p className="text-white/80 leading-relaxed mb-8 text-lg">
+                                <p className="text-black/80 leading-relaxed mb-8 text-lg">
                                     Whether you have a project in mind, want to discuss potential opportunities,
                                     or just want to connect, I'd love to hear from you. Let's create something amazing together!
                                 </p>
@@ -125,7 +125,7 @@ export default function Contact() {
                                         <a
                                             key={contact.label}
                                             href={contact.href}
-                                            className="flex items-center space-x-4 p-4 rounded-2xl glass-effect hover:bg-white/20 transition-all duration-300 group hover-lift"
+                                            className="flex items-center space-x-4 p-4 rounded-2xl glass-effect hover:bg-black/20 transition-all duration-300 group hover-lift"
                                             data-aos="fade-up"
                                             data-aos-offset="200"
                                             data-aos-delay={400 + index * 100}
@@ -137,8 +137,8 @@ export default function Contact() {
                                                 <contact.icon className="w-5 h-5" style={{ color: '#3423a6' }} />
                                             </div>
                                             <div>
-                                                <p className="text-white/70 text-sm">{contact.label}</p>
-                                                <p className="text-white font-medium">{contact.value}</p>
+                                                <p className="text-black/70 text-sm">{contact.label}</p>
+                                                <p className="text-black font-medium">{contact.value}</p>
                                             </div>
                                         </a>
                                     ))}
@@ -153,7 +153,7 @@ export default function Contact() {
                                 data-aos-duration="1000"
                                 data-aos-easing="ease-in-out"
                             >
-                                <h4 className="text-xl font-semibold mb-4 text-white">Connect With Me</h4>
+                                <h4 className="text-xl font-semibold mb-4 text-black">Connect With Me</h4>
                                 <div className="flex space-x-4">
                                     {socialLinks.map((social, index) => (
                                         <a
@@ -161,7 +161,7 @@ export default function Contact() {
                                             href={social.href}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="w-12 h-12 rounded-xl flex items-center justify-center glass-effect hover:bg-white/20 transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 glow"
+                                            className="w-12 h-12 rounded-xl flex items-center justify-center glass-effect hover:bg-black/20 transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 glow"
                                             title={social.label}
                                             data-aos="zoom-in"
                                             data-aos-offset="200"
@@ -169,7 +169,7 @@ export default function Contact() {
                                             data-aos-duration="600"
                                             data-aos-easing="ease-in-out"
                                         >
-                                            <social.icon className="w-5 h-5 text-white/80 hover:text-white transition-colors duration-300" />
+                                            <social.icon className="w-5 h-5 text-black/80 hover:text-black transition-colors duration-300" />
                                         </a>
                                     ))}
                                 </div>
@@ -177,7 +177,7 @@ export default function Contact() {
 
                             {/* Call to Action */}
                             <Card
-                                className="glass-effect border-0 hover:bg-white/20 transition-all duration-300 hover-lift"
+                                className="glass-effect border-0 hover:bg-black/20 transition-all duration-300 hover-lift"
                                 data-aos="fade-up"
                                 data-aos-offset="200"
                                 data-aos-delay="900"
@@ -185,12 +185,12 @@ export default function Contact() {
                                 data-aos-easing="ease-in-out"
                             >
                                 <CardContent className="p-6 text-center">
-                                    <h4 className="text-xl font-semibold text-white mb-2">Ready to Start a Project?</h4>
-                                    <p className="text-white/80 mb-4">
+                                    <h4 className="text-xl font-semibold text-black mb-2">Ready to Start a Project?</h4>
+                                    <p className="text-black/80 mb-4">
                                         Let's discuss how we can bring your ideas to life with cutting-edge technology.
                                     </p>
                                     <Button
-                                        className="btn-primary text-white border-none shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+                                        className="btn-primary text-black border-none shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
                                         onClick={() => document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' })}
                                     >
                                         Start a Conversation
@@ -289,7 +289,7 @@ export default function Contact() {
                                         <Button
                                             type="submit"
                                             size="lg"
-                                            className="w-full btn-primary text-white border-none shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 glow"
+                                            className="w-full btn-primary text-black border-none shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 glow"
                                         >
                                             <Send className="w-4 h-4 mr-2" />
                                             Send Message
@@ -315,17 +315,17 @@ export default function Contact() {
 
                     {/* Footer */}
                     <div
-                        className="mt-20 pt-8 border-t border-white/20 text-center"
+                        className="mt-20 pt-8 border-t border-black/20 text-center"
                         data-aos="fade-up"
                         data-aos-offset="200"
                         data-aos-delay="1000"
                         data-aos-duration="1000"
                         data-aos-easing="ease-in-out"
                     >
-                        <p className="text-white/80">
+                        <p className="text-black/80">
                             © 2024 Sarah Chen. Built with React, TypeScript, and lots of ☕
                         </p>
-                        <p className="text-white/60 mt-2 text-sm">
+                        <p className="text-black/60 mt-2 text-sm">
                             Designed with sustainability and accessibility in mind
                         </p>
                     </div>

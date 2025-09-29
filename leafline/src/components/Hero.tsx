@@ -18,7 +18,7 @@ export default function Hero() {
     };
 
     return (
-        <section className="min-h-screen relative overflow-hidden animated-bg bg-[#171738]">
+        <section className="min-h-screen relative overflow-hidden animated-bg bg-[#dff3e4]">
             {/* Animated Background Elements */}
             <div className="absolute inset-0">
                 <div
@@ -36,7 +36,7 @@ export default function Hero() {
             </div>
 
             {/* Curved Shape Overlay */}
-            <div className="absolute bottom-0 left-0 right-0 h-32 bg-[#171738] curved-bottom"></div>
+            <div className="absolute bottom-0 left-0 right-0 h-32 bg-[#dff3e4] curved-bottom"></div>
 
             <div className="container mx-auto px-6 relative z-10">
                 <div className="min-h-screen flex items-center">
@@ -67,7 +67,7 @@ export default function Hero() {
                                     <div className="w-full h-full rounded-3xl glass-card flex items-center justify-center shadow-2xl hover-lift glow">
                                         <div className="text-center space-y-4">
                                             <div
-                                                className="w-32 h-32 mx-auto rounded-full flex items-center justify-center text-5xl font-bold text-white"
+                                                className="w-32 h-32 mx-auto rounded-full flex items-center justify-center text-5xl font-bold text-black"
                                                 style={{ background: 'linear-gradient(135deg, #3423a6, #7180b9)' }}
                                             >
                                                 SC
@@ -85,7 +85,7 @@ export default function Hero() {
                         <div className="order-1 lg:order-2 text-center lg:text-left space-y-8">
                             <div className="space-y-6">
                                 <h1
-                                    className="text-5xl lg:text-7xl font-bold text-white leading-tight"
+                                    className="text-5xl lg:text-7xl font-bold text-black leading-tight"
                                     data-aos="fade-down"
                                     data-aos-offset="200"
                                     data-aos-delay="50"
@@ -103,7 +103,7 @@ export default function Hero() {
                                     data-aos-duration="1000"
                                     data-aos-easing="ease-in-out"
                                 >
-                                    <h2 className="text-2xl lg:text-3xl font-semibold text-white/90">
+                                    <h2 className="text-2xl lg:text-3xl font-semibold text-black/90">
                                         Computer Engineering Undergraduate
                                     </h2>
                                     <div
@@ -113,7 +113,7 @@ export default function Hero() {
                                 </div>
 
                                 <p
-                                    className="text-lg lg:text-xl text-white/80 max-w-2xl leading-relaxed"
+                                    className="text-lg lg:text-xl text-black/80 max-w-2xl leading-relaxed"
                                     data-aos="fade-up"
                                     data-aos-offset="200"
                                     data-aos-delay="400"
@@ -137,7 +137,7 @@ export default function Hero() {
                             >
                                 <Button
                                     size="lg"
-                                    className="btn-primary text-white px-8 py-4 rounded-full shadow-lg group"
+                                    className="btn-primary text-black px-8 py-4 rounded-full shadow-lg group"
                                     onClick={() =>
                                         document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })
                                     }
@@ -148,7 +148,7 @@ export default function Hero() {
                                 <Button
                                     variant="outline"
                                     size="lg"
-                                    className="glass-effect text-white border-white/30 hover:bg-white/20 px-8 py-4 rounded-full shadow-lg hover-lift"
+                                    className="glass-effect text-black border-black/30 hover:bg-black/20 px-8 py-4 rounded-full shadow-lg hover-lift"
                                 >
                                     <Download className="w-4 h-4 mr-2" />
                                     Download Resume
@@ -165,16 +165,16 @@ export default function Hero() {
                                 data-aos-easing="ease-in-out"
                             >
                                 <div className="text-center">
-                                    <div className="text-3xl font-bold text-white">15+</div>
-                                    <div className="text-white/70 text-sm">Projects</div>
+                                    <div className="text-3xl font-bold text-black">15+</div>
+                                    <div className="text-black/70 text-sm">Projects</div>
                                 </div>
                                 <div className="text-center">
-                                    <div className="text-3xl font-bold text-white">3.8</div>
-                                    <div className="text-white/70 text-sm">GPA</div>
+                                    <div className="text-3xl font-bold text-black">3.8</div>
+                                    <div className="text-black/70 text-sm">GPA</div>
                                 </div>
                                 <div className="text-center">
-                                    <div className="text-3xl font-bold text-white">2+</div>
-                                    <div className="text-white/70 text-sm">Years Exp</div>
+                                    <div className="text-3xl font-bold text-black">2+</div>
+                                    <div className="text-black/70 text-sm">Years Exp</div>
                                 </div>
                             </div>
                         </div>
@@ -192,9 +192,9 @@ export default function Hero() {
                 >
                     <button
                         onClick={scrollToAbout}
-                        className="p-3 rounded-full glass-effect hover:bg-white/20 transition-all duration-300 animate-bounce"
+                        className="p-3 rounded-full glass-effect hover:bg-black/20 transition-all duration-300 animate-bounce"
                     >
-                        <ChevronDown className="w-6 h-6 text-white" />
+                        <ChevronDown className="w-6 h-6 text-black" />
                     </button>
                 </div>
             </div>

@@ -15,7 +15,7 @@ export default function About() {
     }, []);
 
     return (
-        <section id="about" className="py-20 relative" style={{ backgroundColor: '#dff3e4' }}>
+        <section id="about" className="py-20 relative" style={{ backgroundColor: '#f1f5f9' }}>
             {/* Background Elements */}
             <div className="absolute inset-0 overflow-hidden">
                 <div className="absolute top-20 right-10 w-64 h-64 rounded-full opacity-10 floating"
