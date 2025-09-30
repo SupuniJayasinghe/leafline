@@ -22,7 +22,7 @@ export default function Hero() {
 
     return (
         <section className="min-h-screen relative overflow-hidden animated-bg bg-[#dff3e4]">
-            <header className="fixed top-0 left-0 right-0 bg-[#dff3e4]/80 backdrop-blur-md z-50 shadow-md">
+            <header className="fixed top-0 left-0 right-0 bg-[#dff3e4]/80 backdrop-blur-md z-50 shadow-md m-12 rounded-xl">
                 <div className="container mx-auto px-6 py-4 flex items-center justify-between">
                     {/* Logo */}
                     <h1 className="text-xl font-bold text-black">Sarah Chen</h1>
