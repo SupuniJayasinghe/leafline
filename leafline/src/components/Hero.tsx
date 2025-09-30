@@ -1,9 +1,12 @@
 import { Button } from '@/components/ui/button';
-import { ChevronDown, Download, ArrowRight } from 'lucide-react';
-import { useEffect } from 'react';
+import { ChevronDown, Download, ArrowRight, Menu, X } from 'lucide-react';
+import { useEffect, useState } from 'react';
 import AOS from 'aos';
+import { NavigationMenuContent } from '@radix-ui/react-navigation-menu';
 
 export default function Hero() {
+    const [isOpen, setIsOpen] = useState(false);
+
     useEffect(() => {
         AOS.init({
             duration: 1000,
@@ -19,6 +22,61 @@ export default function Hero() {
 
     return (
         <section className="min-h-screen relative overflow-hidden animated-bg bg-[#dff3e4]">
+            <header className="fixed top-0 left-0 right-0 bg-[#dff3e4]/80 backdrop-blur-md z-50 shadow-md">
+                <div className="container mx-auto px-6 py-4 flex items-center justify-between">
+                    {/* Logo */}
+                    <h1 className="text-xl font-bold text-black">Sarah Chen</h1>
+
+                    {/* Desktop Nav */}
+                    <nav className="hidden md:flex space-x-8 font-medium text-black">
+                        <a href="#about" className="hover:text-[#3423a6] transition-colors">
+                            About
+                        </a>
+                        <a href="#projects" className="hover:text-[#3423a6] transition-colors">
+                            Projects
+                        </a>
+                        <a href="#contact" className="hover:text-[#3423a6] transition-colors">
+                            Contact
+                        </a>
+                    </nav>
+
+                    {/* Mobile Menu Toggle */}
+                    <button
+                        className="md:hidden p-2 rounded-lg hover:bg-black/10"
+                        onClick={() => setIsOpen(!isOpen)}
+                    >
+                        {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+                    </button>
+                </div>
+
+                {/* Mobile Nav */}
+                {isOpen && (
+                    <nav className="md:hidden bg-[#dff3e4] border-t border-black/20 px-6 py-4 space-y-4 font-medium text-black">
+                        <a
+                            href="#about"
+                            className="block hover:text-[#3423a6] transition-colors"
+                            onClick={() => setIsOpen(false)}
+                        >
+                            About
+                        </a>
+                        <a
+                            href="#projects"
+                            className="block hover:text-[#3423a6] transition-colors"
+                            onClick={() => setIsOpen(false)}
+                        >
+                            Projects
+                        </a>
+                        <a
+                            href="#contact"
+                            className="block hover:text-[#3423a6] transition-colors"
+                            onClick={() => setIsOpen(false)}
+                        >
+                            Contact
+                        </a>
+                    </nav>
+                )}
+            </header>
+            {/* <NavigationMenuContent /> */}
             {/* Animated Background Elements */}
             <div className="absolute inset-0">
                 <div
