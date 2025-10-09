@@ -85,11 +85,11 @@ export default function Projects() {
     ];
 
     return (
-        <section id="projects" className="py-20 relative overflow-hidden" style={{ backgroundColor: '#f1f5f9' }}>
+        <section id="projects" className="py-20 relative overflow-hidden" style={{ backgroundColor: '#E0D9D9' }}>
             {/* Background Elements */}
             <div className="absolute inset-0">
                 <div className="absolute top-20 left-10 w-80 h-80 rounded-full opacity-5 floating"
-                    style={{ backgroundColor: '#3423a6' }}></div>
+                    style={{ backgroundColor: '#2F5755' }}></div>
                 <div className="absolute bottom-20 right-10 w-96 h-96 rounded-full opacity-5 floating-delayed"
                     style={{ backgroundColor: '#2e1760' }}></div>
             </div>
@@ -109,7 +109,7 @@ export default function Projects() {
                             Featured Projects
                         </h2>
                         <div className="w-24 h-1 mx-auto rounded-full"
-                            style={{ background: 'linear-gradient(90deg, #3423a6, #7180b9)' }}></div>
+                            style={{ background: 'linear-gradient(90deg, #2F5755, #5A9690)' }}></div>
                         <p className="mt-6 max-w-2xl mx-auto text-lg" style={{ color: '#2e1760' }}>
                             A showcase of my recent work, demonstrating my skills in full-stack development,
                             machine learning, and innovative problem-solving.
@@ -130,7 +130,7 @@ export default function Projects() {
                             >
                                 {/* Gradient Overlay */}
                                 <div className="absolute inset-0 opacity-0 group-hover:opacity-10 transition-opacity duration-300"
-                                    style={{ background: 'linear-gradient(135deg, #3423a6, #7180b9)' }}></div>
+                                    style={{ background: 'linear-gradient(135deg, #2F5755, #5A9690)' }}></div>
 
                                 <CardHeader className="pb-4 relative z-10">
                                     {/* Project Icon/Image */}
@@ -149,14 +149,14 @@ export default function Projects() {
                                                     ? 'text-white border-0'
                                                     : 'text-white border-0'
                                                 }
-                                                style={{ backgroundColor: project.status === 'Completed' ? '#3423a6' : '#7180b9' }}
+                                                style={{ backgroundColor: project.status === 'Completed' ? '#2F5755' : '#5A9690' }}
                                             >
                                                 {project.status}
                                             </Badge>
                                         </div>
                                     </div>
 
-                                    <div className="flex items-center text-sm" style={{ color: '#7180b9' }}>
+                                    <div className="flex items-center text-sm" style={{ color: '#5A9690' }}>
                                         <Star className="w-3 h-3 mr-1" />
                                         {project.stars} stars
                                     </div>
@@ -176,7 +176,7 @@ export default function Projects() {
                                                     key={tech}
                                                     variant="outline"
                                                     className="text-xs border-0 text-white glass-effect hover-lift"
-                                                    style={{ backgroundColor: '#7180b9' }}
+                                                    style={{ backgroundColor: '#5A9690' }}
                                                 >
                                                     {tech}
                                                 </Badge>
@@ -190,7 +190,7 @@ export default function Projects() {
                                         <ul className="text-xs space-y-1">
                                             {project.features.slice(0, 3).map((feature, idx) => (
                                                 <li key={idx} className="flex items-center group-hover:text-white transition-colors duration-300" style={{ color: '#2e1760' }}>
-                                                    <span className="w-1 h-1 rounded-full mr-2" style={{ backgroundColor: '#3423a6' }}></span>
+                                                    <span className="w-1 h-1 rounded-full mr-2" style={{ backgroundColor: '#2F5755' }}></span>
                                                     {feature}
                                                 </li>
                                             ))}
@@ -203,7 +203,7 @@ export default function Projects() {
                                             size="sm"
                                             variant="outline"
                                             className="flex-1 glass-effect text-white border-0 hover:bg-white/20 transition-all duration-300"
-                                            style={{ backgroundColor: '#7180b9' }}
+                                            style={{ backgroundColor: '#5A9690' }}
                                         >
                                             <Github className="w-3 h-3 mr-1" />
                                             Code

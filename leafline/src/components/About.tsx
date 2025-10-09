@@ -15,11 +15,11 @@ export default function About() {
     }, []);
 
     return (
-        <section id="about" className="py-20 relative" style={{ backgroundColor: '#f1f5f9' }}>
+        <section id="about" className="py-20 relative" style={{ backgroundColor: '#E0D9D9' }}>
             {/* Background Elements */}
             <div className="absolute inset-0 overflow-hidden">
                 <div className="absolute top-20 right-10 w-64 h-64 rounded-full opacity-10 floating"
-                    style={{ backgroundColor: '#3423a6' }}></div>
+                    style={{ backgroundColor: '#2F5755' }}></div>
                 <div className="absolute bottom-20 left-10 w-48 h-48 rounded-full opacity-15 floating-delayed"
                     style={{ backgroundColor: '#2e1760' }}></div>
             </div>
@@ -39,7 +39,7 @@ export default function About() {
                             About Me
                         </h2>
                         <div className="w-24 h-1 mx-auto rounded-full"
-                            style={{ background: 'linear-gradient(90deg, #3423a6, #7180b9)' }}></div>
+                            style={{ background: 'linear-gradient(90deg, #2F5755, #5A9690)' }}></div>
                     </div>
 
                     <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -56,7 +56,7 @@ export default function About() {
                                 <div className="w-full max-w-md mx-auto h-96 rounded-3xl glass-card flex items-center justify-center shadow-2xl hover-lift">
                                     <div className="text-center space-y-4">
                                         <div className="w-32 h-32 mx-auto rounded-full flex items-center justify-center text-4xl font-bold text-white"
-                                            style={{ background: 'linear-gradient(135deg, #3423a6, #7180b9)' }}>
+                                            style={{ background: 'linear-gradient(135deg, #2F5755, #5A9690)' }}>
                                             SC
                                         </div>
                                         <p className="font-medium" style={{ color: '#2e1760' }}>Profile Photo</p>
@@ -64,9 +64,9 @@ export default function About() {
                                 </div>
                                 {/* Decorative elements */}
                                 <div className="absolute -top-4 -right-4 w-8 h-8 rounded-full pulse-slow"
-                                    style={{ backgroundColor: '#3423a6' }}></div>
+                                    style={{ backgroundColor: '#2F5755' }}></div>
                                 <div className="absolute -bottom-4 -left-4 w-6 h-6 rounded-full pulse-slow"
-                                    style={{ backgroundColor: '#7180b9', animationDelay: '2s' }}></div>
+                                    style={{ backgroundColor: '#5A9690', animationDelay: '2s' }}></div>
                             </div>
                         </div>
 
@@ -112,9 +112,9 @@ export default function About() {
                                         data-aos-duration="1000"
                                         data-aos-easing="ease-in-out"
                                     >
-                                        <CardContent className="p-4 flex items-center space-x-3">
-                                            <div className="p-2 rounded-lg" style={{ backgroundColor: '#dff3e4' }}>
-                                                <value.icon className="w-5 h-5" style={{ color: '#3423a6' }} />
+                                        <CardContent className="p-4 flex items-center space-x-3 rounded-2xl">
+                                            <div className="p-2 rounded-lg" style={{ backgroundColor: '#5A9690' }}>
+                                                <value.icon className="w-5 h-5" style={{ color: '#2F5755' }} />
                                             </div>
                                             <div>
                                                 <h4 className="font-semibold" style={{ color: '#171738' }}>{value.title}</h4>
@@ -135,7 +135,7 @@ export default function About() {
                                 data-aos-easing="ease-in-out"
                             >
                                 <h4 className="text-xl font-semibold flex items-center" style={{ color: '#171738' }}>
-                                    <BookOpen className="w-5 h-5 mr-2" style={{ color: '#3423a6' }} />
+                                    <BookOpen className="w-5 h-5 mr-2" style={{ color: '#2F5755' }} />
                                     Interests & Passions
                                 </h4>
                                 <div className="flex flex-wrap gap-3">
@@ -144,7 +144,7 @@ export default function About() {
                                             key={interest}
                                             variant="secondary"
                                             className="glass-effect hover-lift text-white border-0 shadow-md"
-                                            style={{ backgroundColor: '#7180b9' }}
+                                            style={{ backgroundColor: '#5A9690' }}
                                             data-aos="zoom-in"
                                             data-aos-offset="200"
                                             data-aos-delay={1100 + index * 50}
