@@ -65,19 +65,19 @@ export default function Contact() {
     ];
 
     return (
-        <section id="contact" className="py-20 relative overflow-hidden animated-bg">
+        <section id="contact" className="py-20 relative overflow-hidden animated-bg bg-[#E0D9D9]">
             {/* Background decorative elements */}
             <div className="absolute inset-0">
                 <div className="absolute top-20 left-10 w-80 h-80 rounded-full opacity-10 floating"
-                    style={{ background: 'radial-gradient(circle, #dff3e4, transparent)' }}></div>
+                    style={{ background: 'radial-gradient(circle, #E0D9D9, transparent)' }}></div>
                 <div className="absolute bottom-20 right-10 w-96 h-96 rounded-full opacity-15 floating-delayed"
-                    style={{ background: 'radial-gradient(circle, #7180b9, transparent)' }}></div>
+                    style={{ background: 'radial-gradient(circle, #5A9690, transparent)' }}></div>
             </div>
 
             {/* Curved Shape Overlay */}
-            <div className="absolute top-0 left-0 right-0 h-32 curved-shape" style={{ backgroundColor: '#f1f5f9' }}></div>
+            <div className="absolute top-0 left-0 right-0 h-32 curved-shape" style={{ backgroundColor: '#E0D9D9' }}></div>
 
-            <div className="container mx-auto px-6 relative z-10">
+            <div className="container mx-auto px-6 relative z-10 bg-[#E0D9D9]">
                 <div className="max-w-6xl mx-auto">
                     {/* Section Header */}
                     <div
@@ -92,14 +92,14 @@ export default function Contact() {
                             Let's Work Together
                         </h2>
                         <div className="w-24 h-1 mx-auto rounded-full"
-                            style={{ background: 'linear-gradient(90deg, #dff3e4, #7180b9)' }}></div>
+                            style={{ background: 'linear-gradient(90deg, #E0D9D9, #5A9690)' }}></div>
                         <p className="text-black/90 mt-6 max-w-2xl mx-auto text-lg">
                             I'm always excited to discuss new opportunities, collaborate on interesting projects,
                             or just have a chat about technology and innovation.
                         </p>
                     </div>
 
-                    <div className="grid lg:grid-cols-2 gap-12">
+                    <div className="grid lg:grid-cols-2 gap-12 ">
                         {/* Contact Information */}
                         <div
                             className="space-y-8"
@@ -109,7 +109,7 @@ export default function Contact() {
                             data-aos-duration="1000"
                             data-aos-easing="ease-in-out"
                         >
-                            <div>
+                            <div className=''>
                                 <h3 className="text-2xl font-bold mb-6 text-black flex items-center">
                                     <MessageCircle className="w-6 h-6 mr-3" />
                                     Get In Touch
@@ -133,8 +133,8 @@ export default function Contact() {
                                             data-aos-easing="ease-in-out"
                                         >
                                             <div className="w-12 h-12 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 glass-effect"
-                                                style={{ backgroundColor: '#dff3e4' }}>
-                                                <contact.icon className="w-5 h-5" style={{ color: '#3423a6' }} />
+                                                style={{ backgroundColor: '#E0D9D9' }}>
+                                                <contact.icon className="w-5 h-5" style={{ color: '#2F5755' }} />
                                             </div>
                                             <div>
                                                 <p className="text-black/70 text-sm">{contact.label}</p>
@@ -223,7 +223,7 @@ export default function Contact() {
                                                     style={{
                                                         backgroundColor: 'rgba(116, 128, 185, 0.1)',
                                                         color: '#171738',
-                                                        focusRingColor: '#3423a6'
+                                                        // focusRingColor: '#2F5755'
                                                     }}
                                                 />
                                             </div>
@@ -296,13 +296,13 @@ export default function Contact() {
                                         </Button>
                                     </form>
 
-                                    <div className="mt-6 pt-6 border-t border-opacity-20 text-center" style={{ borderColor: '#7180b9' }}>
+                                    <div className="mt-6 pt-6 border-t border-opacity-20 text-center" style={{ borderColor: '#5A9690' }}>
                                         <p className="text-sm" style={{ color: '#2e1760' }}>
                                             Prefer email? Reach me directly at{' '}
                                             <a
                                                 href="mailto:sarah.chen@email.com"
                                                 className="font-medium underline hover:no-underline transition-all duration-300"
-                                                style={{ color: '#3423a6' }}
+                                                style={{ color: '#2F5755' }}
                                             >
                                                 sarah.chen@email.com
                                             </a>

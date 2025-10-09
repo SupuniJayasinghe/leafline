@@ -36,13 +36,13 @@ export default function Skills() {
     ];
 
     return (
-        <section id="skills" className="py-20 relative overflow-hidden" style={{ backgroundColor: '#dff3e4' }}>
+        <section id="skills" className="py-20 relative overflow-hidden" style={{ backgroundColor: '#432323' }}>
             {/* Background Elements */}
             <div className="absolute inset-0">
                 <div className="absolute top-10 left-10 w-72 h-72 rounded-full opacity-5 floating"
-                    style={{ backgroundColor: '#3423a6' }}></div>
+                    style={{ backgroundColor: '#5A9690' }}></div>
                 <div className="absolute bottom-10 right-10 w-96 h-96 rounded-full opacity-5 floating-delayed"
-                    style={{ backgroundColor: '#2e1760' }}></div>
+                    style={{ backgroundColor: '#2F5755' }}></div>
             </div>
 
             <div className="container mx-auto px-6 relative z-10">
@@ -56,12 +56,12 @@ export default function Skills() {
                         data-aos-duration="1000"
                         data-aos-easing="ease-in-out"
                     >
-                        <h2 className="text-4xl md:text-5xl font-bold mb-4 gradient-text">
+                        <h2 className="text-4xl md:text-5xl font-bold mb-4 gradient-text text-[#E0D9D9]">
                             Skills & Tech Stack
                         </h2>
                         <div className="w-24 h-1 mx-auto rounded-full"
-                            style={{ background: 'linear-gradient(90deg, #3423a6, #7180b9)' }}></div>
-                        <p className="mt-6 max-w-2xl mx-auto text-lg" style={{ color: '#2e1760' }}>
+                            style={{ background: 'linear-gradient(90deg, #5A9690, #2F5755)' }}></div>
+                        <p className="mt-6 max-w-2xl mx-auto text-lg" style={{ color: '#E0D9D9' }}>
                             A comprehensive overview of my technical skills and the tools I use to bring ideas to life.
                         </p>
                     </div>
@@ -69,7 +69,7 @@ export default function Skills() {
                     <div className="grid lg:grid-cols-2 gap-8 mb-12">
                         {/* Programming Languages */}
                         <Card
-                            className="glass-card border-0 shadow-xl hover-lift bg-white rounded-2xl"
+                            className="glass-card border-0 shadow-xl hover-lift bg-[#E0D9D9] rounded-2xl"
                             data-aos="fade-right"
                             data-aos-offset="200"
                             data-aos-delay="200"
@@ -78,7 +78,7 @@ export default function Skills() {
                         >
                             <CardContent className="p-8">
                                 <h3 className="text-2xl font-bold mb-6 flex items-center" style={{ color: '#171738' }}>
-                                    <Code2 className="mr-3" style={{ color: '#3423a6' }} />
+                                    <Code2 className="mr-3" style={{ color: '#5A9690' }} />
                                     Programming Languages
                                 </h3>
                                 <div className="space-y-6">
@@ -97,12 +97,12 @@ export default function Skills() {
                                                     <span className="text-lg mr-2">{lang.icon}</span>
                                                     {lang.name}
                                                 </span>
-                                                <span className="font-semibold" style={{ color: '#3423a6' }}>{lang.level}%</span>
+                                                <span className="font-semibold" style={{ color: '#5A9690' }}>{lang.level}%</span>
                                             </div>
                                             <div className="relative">
                                                 <Progress
                                                     value={lang.level}
-                                                    className="h-2 bg-gray-200"
+                                                    className="h-2 bg-teal-700"
                                                 />
                                                 <div
                                                     className="absolute top-0 left-0 h-2 rounded-full progress-fill transition-all duration-1000 ease-out"
@@ -117,7 +117,7 @@ export default function Skills() {
 
                         {/* Technologies & Tools */}
                         <Card
-                            className="glass-card border-0 shadow-xl hover-lift bg-white rounded-2xl"
+                            className="glass-card border-0 shadow-xl hover-lift bg-[#E0D9D9] rounded-2xl"
                             data-aos="fade-left"
                             data-aos-offset="200"
                             data-aos-delay="400"
@@ -126,19 +126,19 @@ export default function Skills() {
                         >
                             <CardContent className="p-8">
                                 <h3 className="text-2xl font-bold mb-6 flex items-center" style={{ color: '#171738' }}>
-                                    <Database className="mr-3" style={{ color: '#3423a6' }} />
+                                    <Database className="mr-3" style={{ color: '#5A9690' }} />
                                     Technologies & Tools
                                 </h3>
                                 <div className="space-y-6">
                                     <div>
-                                        <h4 className="font-semibold mb-4" style={{ color: '#2e1760' }}>Frameworks & Libraries</h4>
+                                        <h4 className="font-semibold mb-4" style={{ color: '#2F5755' }}>Frameworks & Libraries</h4>
                                         <div className="flex flex-wrap gap-2">
                                             {technologies.map((tech, index) => (
                                                 <Badge
                                                     key={tech}
                                                     variant="secondary"
-                                                    className="glass-effect hover-lift text-white border-0 shadow-md"
-                                                    style={{ backgroundColor: '#7180b9' }}
+                                                    className="glass-effect hover-lift text-[#E0D9D9] border-0 shadow-md"
+                                                    style={{ backgroundColor: '#5A9690' }}
                                                     data-aos="zoom-in"
                                                     data-aos-offset="200"
                                                     data-aos-delay={600 + index * 50}
@@ -159,7 +159,7 @@ export default function Skills() {
                                         data-aos-duration="1000"
                                         data-aos-easing="ease-in-out"
                                     >
-                                        <h4 className="font-semibold" style={{ color: '#2e1760' }}>Development Environment</h4>
+                                        <h4 className="font-semibold" style={{ color: '#2F5755' }}>Development Environment</h4>
                                         <div className="grid grid-cols-2 gap-4">
                                             {[
                                                 { name: 'VS Code', category: 'Editor' },
@@ -177,7 +177,7 @@ export default function Skills() {
                                                     data-aos-easing="ease-in-out"
                                                 >
                                                     <span className="font-medium block" style={{ color: '#171738' }}>{tool.name}</span>
-                                                    <span className="text-xs" style={{ color: '#7180b9' }}>{tool.category}</span>
+                                                    <span className="text-xs" style={{ color: '#5A9690' }}>{tool.category}</span>
                                                 </div>
                                             ))}
                                         </div>
@@ -189,7 +189,7 @@ export default function Skills() {
 
                     {/* Soft Skills */}
                     <Card
-                        className="glass-card border-0 shadow-xl hover-lift bg-white rounded-2xl"
+                        className="glass-card border-0 shadow-xl hover-lift bg-[#E0D9D9] rounded-2xl"
                         data-aos="fade-up"
                         data-aos-offset="200"
                         data-aos-delay="600"
@@ -198,7 +198,7 @@ export default function Skills() {
                     >
                         <CardContent className="p-8">
                             <h3 className="text-2xl font-bold mb-8 flex items-center justify-center" style={{ color: '#171738' }}>
-                                <Globe className="mr-3" style={{ color: '#3423a6' }} />
+                                <Globe className="mr-3" style={{ color: '#5A9690' }} />
                                 Core Competencies
                             </h3>
                             <div className="grid md:grid-cols-3 gap-8">
@@ -213,10 +213,10 @@ export default function Skills() {
                                         data-aos-easing="ease-in-out"
                                     >
                                         <div className="w-20 h-20 mx-auto rounded-full flex items-center justify-center glass-effect glow">
-                                            <skill.icon className="w-8 h-8" style={{ color: '#3423a6' }} />
+                                            <skill.icon className="w-8 h-8" style={{ color: '#5A9690' }} />
                                         </div>
                                         <h4 className="text-xl font-semibold" style={{ color: '#171738' }}>{skill.title}</h4>
-                                        <p className="text-sm leading-relaxed" style={{ color: '#2e1760' }}>{skill.desc}</p>
+                                        <p className="text-sm leading-relaxed" style={{ color: '#2F5755' }}>{skill.desc}</p>
                                     </div>
                                 ))}
                             </div>

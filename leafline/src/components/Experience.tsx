@@ -112,11 +112,11 @@ export default function Experience() {
     ];
 
     return (
-        <section id="experience" className="py-20 relative overflow-hidden" style={{ backgroundColor: '#dff3e4' }}>
+        <section id="experience" className="py-20 relative overflow-hidden" style={{ backgroundColor: '#432323' }}>
             {/* Background Elements */}
             <div className="absolute inset-0">
                 <div className="absolute top-20 right-10 w-72 h-72 rounded-full opacity-10 floating"
-                    style={{ backgroundColor: '#3423a6' }}></div>
+                    style={{ backgroundColor: '#2F5755' }}></div>
                 <div className="absolute bottom-20 left-10 w-64 h-64 rounded-full opacity-15 floating-delayed"
                     style={{ backgroundColor: '#2e1760' }}></div>
             </div>
@@ -132,12 +132,12 @@ export default function Experience() {
                         data-aos-duration="1000"
                         data-aos-easing="ease-in-out"
                     >
-                        <h2 className="text-4xl md:text-5xl font-bold mb-4 gradient-text">
+                        <h2 className="text-4xl md:text-5xl font-bold mb-4 gradient-text text-[#E0D9D9]">
                             Experience & Education
                         </h2>
                         <div className="w-24 h-1 mx-auto rounded-full"
-                            style={{ background: 'linear-gradient(90deg, #3423a6, #7180b9)' }}></div>
-                        <p className="mt-6 max-w-2xl mx-auto text-lg" style={{ color: '#2e1760' }}>
+                            style={{ background: 'linear-gradient(90deg, #2F5755, #5A9690)' }}></div>
+                        <p className="mt-6 max-w-2xl mx-auto text-lg" style={{ color: '#E0D9D9' }}>
                             My journey through professional experiences, academic achievements, and continuous learning.
                         </p>
                     </div>
@@ -147,7 +147,7 @@ export default function Experience() {
                         <div className="space-y-6">
                             <h3
                                 className="text-2xl font-bold flex items-center mb-8"
-                                style={{ color: '#171738' }}
+                                style={{ color: '#E0D9D9' }}
                                 data-aos="fade-right"
                                 data-aos-offset="200"
                                 data-aos-delay="200"
@@ -155,7 +155,7 @@ export default function Experience() {
                                 data-aos-easing="ease-in-out"
                             >
                                 <div className="w-10 h-10 rounded-full flex items-center justify-center mr-3 glass-effect"
-                                    style={{ backgroundColor: '#3423a6' }}>
+                                    style={{ backgroundColor: '#2F5755' }}>
                                     <Briefcase className="w-5 h-5 text-white" />
                                 </div>
                                 Professional Experience
@@ -163,7 +163,7 @@ export default function Experience() {
 
                             <div className="relative">
                                 {/* Timeline Line */}
-                                <div className="absolute left-5 top-0 bottom-0 w-0.5" style={{ backgroundColor: '#7180b9' }}></div>
+                                <div className="absolute left-5 top-0 bottom-0 w-0.5" style={{ backgroundColor: '#5A9690' }}></div>
 
                                 {experiences.map((exp, index) => (
                                     <div
@@ -177,18 +177,18 @@ export default function Experience() {
                                     >
                                         {/* Timeline Dot */}
                                         <div className="absolute left-3 w-4 h-4 rounded-full border-4 border-white shadow-lg"
-                                            style={{ backgroundColor: '#3423a6' }}></div>
+                                            style={{ backgroundColor: '#2F5755' }}></div>
 
-                                        <Card className="glass-card border-0 shadow-xl hover-lift glow">
+                                        <Card className="glass-card border-0 shadow-xl hover-lift glow bg-[#E0D9D9] rounded-xl">
                                             <CardHeader className="pb-3">
                                                 <div className="flex justify-between items-start">
                                                     <div>
                                                         <CardTitle className="text-lg font-bold" style={{ color: '#171738' }}>
                                                             {exp.title}
                                                         </CardTitle>
-                                                        <p className="font-semibold" style={{ color: '#3423a6' }}>{exp.company}</p>
+                                                        <p className="font-semibold" style={{ color: '#2F5755' }}>{exp.company}</p>
                                                     </div>
-                                                    <Badge className="text-white border-0" style={{ backgroundColor: '#7180b9' }}>
+                                                    <Badge className="text-white border-0" style={{ backgroundColor: '#5A9690' }}>
                                                         {exp.period}
                                                     </Badge>
                                                 </div>
@@ -208,7 +208,7 @@ export default function Experience() {
                                                     <ul className="space-y-1">
                                                         {exp.achievements.map((achievement, idx) => (
                                                             <li key={idx} className="text-xs flex items-center" style={{ color: '#2e1760' }}>
-                                                                <span className="w-1 h-1 rounded-full mr-2" style={{ backgroundColor: '#3423a6' }}></span>
+                                                                <span className="w-1 h-1 rounded-full mr-2" style={{ backgroundColor: '#2F5755' }}></span>
                                                                 {achievement}
                                                             </li>
                                                         ))}
@@ -221,7 +221,7 @@ export default function Experience() {
                                                             key={tech}
                                                             variant="secondary"
                                                             className="text-xs text-white border-0"
-                                                            style={{ backgroundColor: '#7180b9' }}
+                                                            style={{ backgroundColor: '#5A9690' }}
                                                         >
                                                             {tech}
                                                         </Badge>
@@ -240,7 +240,7 @@ export default function Experience() {
                             <div>
                                 <h3
                                     className="text-2xl font-bold flex items-center mb-8"
-                                    style={{ color: '#171738' }}
+                                    style={{ color: '#E0D9D9' }}
                                     data-aos="fade-left"
                                     data-aos-offset="200"
                                     data-aos-delay="300"
@@ -248,7 +248,7 @@ export default function Experience() {
                                     data-aos-easing="ease-in-out"
                                 >
                                     <div className="w-10 h-10 rounded-full flex items-center justify-center mr-3 glass-effect"
-                                        style={{ backgroundColor: '#3423a6' }}>
+                                        style={{ backgroundColor: '#2F5755' }}>
                                         <GraduationCap className="w-5 h-5 text-white" />
                                     </div>
                                     Education
@@ -258,7 +258,7 @@ export default function Experience() {
                                     {education.map((edu, index) => (
                                         <Card
                                             key={index}
-                                            className="glass-card border-0 shadow-xl hover-lift glow"
+                                            className="glass-card border-0 shadow-xl hover-lift glow bg-[#E0D9D9] rounded-xl"
                                             data-aos="fade-left"
                                             data-aos-offset="200"
                                             data-aos-delay={500 + index * 200}
@@ -269,7 +269,7 @@ export default function Experience() {
                                                 <CardTitle className="text-lg font-bold" style={{ color: '#171738' }}>
                                                     {edu.degree}
                                                 </CardTitle>
-                                                <p className="font-semibold" style={{ color: '#3423a6' }}>{edu.school}</p>
+                                                <p className="font-semibold" style={{ color: '#2F5755' }}>{edu.school}</p>
                                                 <div className="flex justify-between items-center text-sm" style={{ color: '#2e1760' }}>
                                                     <span className="flex items-center">
                                                         <MapPin className="w-3 h-3 mr-1" />
@@ -277,7 +277,7 @@ export default function Experience() {
                                                     </span>
                                                     <span>{edu.period}</span>
                                                 </div>
-                                                <div className="font-semibold text-sm" style={{ color: '#3423a6' }}>
+                                                <div className="font-semibold text-sm" style={{ color: '#2F5755' }}>
                                                     GPA: {edu.gpa}
                                                 </div>
                                             </CardHeader>
@@ -288,7 +288,7 @@ export default function Experience() {
                                                     <ul className="space-y-1">
                                                         {edu.achievements.map((achievement, idx) => (
                                                             <li key={idx} className="text-xs flex items-center" style={{ color: '#2e1760' }}>
-                                                                <span className="w-1 h-1 rounded-full mr-2" style={{ backgroundColor: '#3423a6' }}></span>
+                                                                <span className="w-1 h-1 rounded-full mr-2" style={{ backgroundColor: '#2F5755' }}></span>
                                                                 {achievement}
                                                             </li>
                                                         ))}
@@ -303,7 +303,7 @@ export default function Experience() {
                                                                 key={course}
                                                                 variant="outline"
                                                                 className="text-xs border-0 text-white"
-                                                                style={{ backgroundColor: '#7180b9' }}
+                                                                style={{ backgroundColor: '#5A9690' }}
                                                             >
                                                                 {course}
                                                             </Badge>
@@ -320,7 +320,7 @@ export default function Experience() {
                             <div>
                                 <h3
                                     className="text-2xl font-bold flex items-center mb-6"
-                                    style={{ color: '#171738' }}
+                                    style={{ color: '#E0D9D9' }}
                                     data-aos="fade-left"
                                     data-aos-offset="200"
                                     data-aos-delay="700"
@@ -328,7 +328,7 @@ export default function Experience() {
                                     data-aos-easing="ease-in-out"
                                 >
                                     <div className="w-10 h-10 rounded-full flex items-center justify-center mr-3 glass-effect"
-                                        style={{ backgroundColor: '#3423a6' }}>
+                                        style={{ backgroundColor: '#2F5755' }}>
                                         <Award className="w-5 h-5 text-white" />
                                     </div>
                                     Certifications
@@ -338,7 +338,7 @@ export default function Experience() {
                                     {certifications.map((cert, index) => (
                                         <Card
                                             key={index}
-                                            className="glass-card border-0 shadow-lg hover-lift"
+                                            className="glass-card border-0 shadow-lg hover-lift bg-[#E0D9D9] rounded-xl"
                                             data-aos="zoom-in"
                                             data-aos-offset="200"
                                             data-aos-delay={900 + index * 100}
@@ -349,10 +349,10 @@ export default function Experience() {
                                                 <div className="flex justify-between items-start">
                                                     <div>
                                                         <h4 className="font-semibold text-sm" style={{ color: '#171738' }}>{cert.name}</h4>
-                                                        <p className="text-xs font-medium" style={{ color: '#3423a6' }}>{cert.issuer}</p>
+                                                        <p className="text-xs font-medium" style={{ color: '#2F5755' }}>{cert.issuer}</p>
                                                         <p className="text-xs" style={{ color: '#2e1760' }}>ID: {cert.credentialId}</p>
                                                     </div>
-                                                    <Badge className="text-xs text-white border-0" style={{ backgroundColor: '#7180b9' }}>
+                                                    <Badge className="text-xs text-white border-0" style={{ backgroundColor: '#5A9690' }}>
                                                         {cert.date}
                                                     </Badge>
                                                 </div>

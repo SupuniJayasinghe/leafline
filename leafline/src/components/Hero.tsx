@@ -21,54 +21,54 @@ export default function Hero() {
     };
 
     return (
-        <section className="min-h-screen relative overflow-hidden animated-bg bg-[#dff3e4]">
-            <header className="fixed top-0 left-0 right-0 bg-[#dff3e4]/80 backdrop-blur-md z-50 shadow-md m-12 rounded-xl">
-                <div className="container mx-auto px-6 py-4 flex items-center justify-between">
-                    {/* Logo */}
-                    <h1 className="text-xl font-bold text-black">Sarah Chen</h1>
+        <section className="min-h-screen relative overflow-hidden animated-bg bg-[#432323]">
+            <header className="fixed top-0 left-0 right-0 bg-[#432323]/80 backdrop-blur-md z-50 shadow-md m-12 rounded-xl">
+                {/* <div className="container mx-auto px-6 py-4 flex items-center justify-between"> */}
+                {/* Logo */}
+                {/* <h1 className="text-xl font-bold text-[#E0D9D9]">Sarah Chen</h1> */}
 
-                    {/* Desktop Nav */}
-                    <nav className="hidden md:flex space-x-8 font-medium text-black">
-                        <a href="#about" className="hover:text-[#3423a6] transition-colors">
+                {/* Desktop Nav */}
+                {/* <nav className="hidden md:flex space-x-8 font-medium text-[#E0D9D9]">
+                        <a href="#about" className="hover:text-[#2F5755] transition-colors">
                             About
                         </a>
-                        <a href="#projects" className="hover:text-[#3423a6] transition-colors">
+                        <a href="#projects" className="hover:text-[#2F5755] transition-colors">
                             Projects
                         </a>
-                        <a href="#contact" className="hover:text-[#3423a6] transition-colors">
+                        <a href="#contact" className="hover:text-[#2F5755] transition-colors">
                             Contact
                         </a>
-                    </nav>
+                    </nav> */}
 
-                    {/* Mobile Menu Toggle */}
-                    <button
-                        className="md:hidden p-2 rounded-lg hover:bg-black/10"
+                {/* Mobile Menu Toggle */}
+                {/* <button
+                        className="md:hidden p-2 rounded-lg hover:bg-[#E0D9D9]/10"
                         onClick={() => setIsOpen(!isOpen)}
                     >
                         {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-                    </button>
-                </div>
+                    </button> */}
+                {/* </div> */}
 
                 {/* Mobile Nav */}
                 {isOpen && (
-                    <nav className="md:hidden bg-[#dff3e4] border-t border-black/20 px-6 py-4 space-y-4 font-medium text-black">
+                    <nav className="md:hidden bg-[#432323] border-t border-[#E0D9D9]/20 px-6 py-4 space-y-4 font-medium text-[#E0D9D9]">
                         <a
                             href="#about"
-                            className="block hover:text-[#3423a6] transition-colors"
+                            className="block hover:text-[#2F5755] transition-colors"
                             onClick={() => setIsOpen(false)}
                         >
                             About
                         </a>
                         <a
                             href="#projects"
-                            className="block hover:text-[#3423a6] transition-colors"
+                            className="block hover:text-[#2F5755] transition-colors"
                             onClick={() => setIsOpen(false)}
                         >
                             Projects
                         </a>
                         <a
                             href="#contact"
-                            className="block hover:text-[#3423a6] transition-colors"
+                            className="block hover:text-[#2F5755] transition-colors"
                             onClick={() => setIsOpen(false)}
                         >
                             Contact
@@ -81,20 +81,20 @@ export default function Hero() {
             <div className="absolute inset-0">
                 <div
                     className="absolute top-20 left-10 w-96 h-96 rounded-full opacity-20 floating"
-                    style={{ background: 'radial-gradient(circle, #dff3e4, transparent)' }}
+                    style={{ background: 'radial-gradient(circle, #432323, transparent)' }}
                 ></div>
                 <div
                     className="absolute bottom-20 right-10 w-80 h-80 rounded-full opacity-30 floating-delayed"
-                    style={{ background: 'radial-gradient(circle, #7180b9, transparent)' }}
+                    style={{ background: 'radial-gradient(circle, #5A9690, transparent)' }}
                 ></div>
                 <div
                     className="absolute top-1/2 left-1/3 w-64 h-64 rounded-full opacity-15 floating"
-                    style={{ background: 'radial-gradient(circle, #3423a6, transparent)' }}
+                    style={{ background: 'radial-gradient(circle, #2F5755, transparent)' }}
                 ></div>
             </div>
 
             {/* Curved Shape Overlay */}
-            <div className="absolute bottom-0 left-0 right-0 h-32 bg-[#dff3e4] curved-bottom"></div>
+            <div className="absolute bottom-0 left-0 right-0 h-32 bg-[#432323] curved-bottom"></div>
 
             <div className="container mx-auto px-6 relative z-10">
                 <div className="min-h-screen flex items-center">
@@ -113,11 +113,11 @@ export default function Hero() {
                                 {/* Decorative Elements */}
                                 <div
                                     className="absolute -top-8 -left-8 w-24 h-24 rounded-full pulse-slow"
-                                    style={{ backgroundColor: '#dff3e4' }}
+                                    style={{ backgroundColor: '#432323' }}
                                 ></div>
                                 <div
                                     className="absolute -bottom-6 -right-6 w-16 h-16 rounded-full pulse-slow"
-                                    style={{ backgroundColor: '#7180b9', animationDelay: '2s' }}
+                                    style={{ backgroundColor: '#432323', animationDelay: '2s' }}
                                 ></div>
 
                                 {/* Profile Photo Container */}
@@ -125,13 +125,14 @@ export default function Hero() {
                                     <div className="w-full h-full rounded-3xl glass-card flex items-center justify-center shadow-2xl hover-lift glow">
                                         <div className="text-center space-y-4">
                                             <div
-                                                className="w-32 h-32 mx-auto rounded-full flex items-center justify-center text-5xl font-bold text-black"
-                                                style={{ background: 'linear-gradient(135deg, #3423a6, #7180b9)' }}
+                                                className="w-32 h-32 mx-auto rounded-full flex items-center justify-center text-5xl font-bold text-[#E0D9D9]"
+                                                style={{ background: 'linear-gradient(135deg, #2F5755, #5A9690)' }}
                                             >
                                                 SC
                                             </div>
-                                            <p className="text-lg font-medium" style={{ color: '#dff3e4' }}>
+                                            <p className="text-lg font-medium" style={{ color: '#432323' }}>
                                                 Profile Photo
+
                                             </p>
                                         </div>
                                     </div>
@@ -143,15 +144,14 @@ export default function Hero() {
                         <div className="order-1 lg:order-2 text-center lg:text-left space-y-8">
                             <div className="space-y-6">
                                 <h1
-                                    className="text-5xl lg:text-7xl font-bold text-black leading-tight"
+                                    className="text-5xl lg:text-7xl font-bold text-[#E0D9D9] leading-tight"
                                     data-aos="fade-down"
                                     data-aos-offset="200"
                                     data-aos-delay="50"
                                     data-aos-duration="1000"
                                     data-aos-easing="ease-in-out"
                                 >
-                                    Sarah Chen
-                                </h1>
+                                    Supuni Jayasinghe                                </h1>
 
                                 <div
                                     className="space-y-4"
@@ -161,17 +161,17 @@ export default function Hero() {
                                     data-aos-duration="1000"
                                     data-aos-easing="ease-in-out"
                                 >
-                                    <h2 className="text-2xl lg:text-3xl font-semibold text-black/90">
+                                    <h2 className="text-2xl lg:text-3xl font-semibold text-[#E0D9D9]/90">
                                         Computer Engineering Undergraduate
                                     </h2>
                                     <div
                                         className="w-24 h-1 rounded-full mx-auto lg:mx-0"
-                                        style={{ background: 'linear-gradient(90deg, #dff3e4, #7180b9)' }}
+                                        style={{ background: 'linear-gradient(90deg, #432323, #5A9690)' }}
                                     ></div>
                                 </div>
 
                                 <p
-                                    className="text-lg lg:text-xl text-black/80 max-w-2xl leading-relaxed"
+                                    className="text-lg lg:text-xl text-[#E0D9D9]/80 max-w-2xl leading-relaxed"
                                     data-aos="fade-up"
                                     data-aos-offset="200"
                                     data-aos-delay="400"
@@ -179,7 +179,7 @@ export default function Hero() {
                                     data-aos-easing="ease-in-out"
                                 >
                                     Passionate about creating innovative solutions through code. Specializing in software
-                                    development, machine learning, and embedded systems with a focus on sustainable
+                                    development, Machine Learning, and Cyber Security with a focus on sustainable
                                     technology.
                                 </p>
                             </div>
@@ -195,7 +195,7 @@ export default function Hero() {
                             >
                                 <Button
                                     size="lg"
-                                    className="btn-primary text-black px-8 py-4 rounded-full shadow-lg group"
+                                    className="btn-primary text-[#E0D9D9] px-8 py-4 rounded-full shadow-lg group"
                                     onClick={() =>
                                         document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })
                                     }
@@ -206,7 +206,7 @@ export default function Hero() {
                                 <Button
                                     variant="outline"
                                     size="lg"
-                                    className="glass-effect text-black border-black/30 hover:bg-black/20 px-8 py-4 rounded-full shadow-lg hover-lift"
+                                    className="glass-effect text-[#E0D9D9] border-[#5A9690]/30 hover:bg-[#2F5755]/80 px-8 py-4 rounded-full shadow-lg hover-lift"
                                 >
                                     <Download className="w-4 h-4 mr-2" />
                                     Download Resume
@@ -223,16 +223,16 @@ export default function Hero() {
                                 data-aos-easing="ease-in-out"
                             >
                                 <div className="text-center">
-                                    <div className="text-3xl font-bold text-black">15+</div>
-                                    <div className="text-black/70 text-sm">Projects</div>
+                                    <div className="text-3xl font-bold text-[#E0D9D9]">15+</div>
+                                    <div className="text-[#E0D9D9]/70 text-sm">Projects</div>
                                 </div>
                                 <div className="text-center">
-                                    <div className="text-3xl font-bold text-black">3.8</div>
-                                    <div className="text-black/70 text-sm">GPA</div>
+                                    <div className="text-3xl font-bold text-[#E0D9D9]">3.8</div>
+                                    <div className="text-[#E0D9D9]/70 text-sm">GPA</div>
                                 </div>
                                 <div className="text-center">
-                                    <div className="text-3xl font-bold text-black">2+</div>
-                                    <div className="text-black/70 text-sm">Years Exp</div>
+                                    <div className="text-3xl font-bold text-[#E0D9D9]">2+</div>
+                                    <div className="text-[#E0D9D9]/70 text-sm">Years Exp</div>
                                 </div>
                             </div>
                         </div>
@@ -250,9 +250,9 @@ export default function Hero() {
                 >
                     <button
                         onClick={scrollToAbout}
-                        className="p-3 rounded-full glass-effect hover:bg-black/20 transition-all duration-300 animate-bounce"
+                        className="p-3 rounded-full glass-effect hover:bg-[#E0D9D9]/20 transition-all duration-300 animate-bounce"
                     >
-                        <ChevronDown className="w-6 h-6 text-black" />
+                        <ChevronDown className="w-6 h-6 text-[#E0D9D9]" />
                     </button>
                 </div>
             </div>
